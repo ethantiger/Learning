@@ -1,10 +1,10 @@
-POSTGRES := "postgres14"
+POSTGRES := "postgres18"
 DATABASE := "simple_bank"
 POSTGRES_USER := root
 POSTGRES_PASSWORD := secret
 
 postgres_new:
-	docker run --name $(POSTGRES) -e POSTGRES_USER=$(POSTGRES_USER)-e POSTGRES_PASSWORD=$(POSTGRES_PASSWORD) -p 5432:5432 postgres:14-alpine 
+	docker run --name $(POSTGRES) -e POSTGRES_USER=$(POSTGRES_USER) -e POSTGRES_PASSWORD=$(POSTGRES_PASSWORD) -p 5432:5432 postgres:18-alpine 
 
 postgres:
 	docker start $(POSTGRES)
