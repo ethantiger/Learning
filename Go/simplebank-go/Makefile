@@ -25,7 +25,7 @@ migratedown:
 	migrate -path db/migration -database "postgresql://$(POSTGRES_USER):$(POSTGRES_PASSWORD)@localhost:5432/$(DATABASE)?sslmode=disable" -verbose down
 
 sqlc:
-	../sqlc generate
+	sqlc generate
 
 test:
 	go test -v -cover ./...
