@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	db "github.com/Heartbeat1608/simplebank/db/sqlc"
+	db "github.com/ethantiger/simplebank/db/sqlc"
 	"github.com/gin-gonic/gin"
 )
 

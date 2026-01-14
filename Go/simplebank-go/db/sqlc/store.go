@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/Heartbeat1608/simplebank/db/util"
+	"github.com/ethantiger/simplebank/db/util"
 )
 
 type Store struct {
