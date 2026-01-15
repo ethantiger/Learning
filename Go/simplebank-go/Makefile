@@ -33,4 +33,7 @@ test:
 server:
 	go run main.go
 
-clean_setup: postgres dropdb createdb migrateup sqlc cleanup
+mock:
+	mockgen -package mockdb -destination db/mock/store.go github.com/ethantiger/simplebank/db/sqlc Store
+
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test server mock
