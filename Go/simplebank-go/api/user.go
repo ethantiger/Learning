@@ -5,7 +5,7 @@ import (
 	"time"
 
 	db "github.com/ethantiger/simplebank/db/sqlc"
-	"github.com/ethantiger/simplebank/db/util"
+	"github.com/ethantiger/simplebank/util"
 	"github.com/gin-gonic/gin"
 	"github.com/lib/pq"
 )

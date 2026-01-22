@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethantiger/simplebank/db/util"
+	"github.com/ethantiger/simplebank/util"
 	_ "github.com/lib/pq"
 )
 

@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/ethantiger/simplebank/db/util"
+	"github.com/ethantiger/simplebank/util"
 )
 
 type Store interface {
